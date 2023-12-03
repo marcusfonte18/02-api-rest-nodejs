@@ -6,7 +6,7 @@ const connection =
     ? {
         filename: env.DATABASE_URL,
       }
-    : env.DATABASE_CLIENT
+    : env.DATABASE_URL
 
 export const config: Knex.Config = {
   client: env.DATABASE_CLIENT,
